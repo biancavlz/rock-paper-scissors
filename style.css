@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 8rem;
+  color: #4ECCA3;
+}
+
+h3 {
+  font-size: 3rem;
+  color: #4ECCA3;
+  font-family: 'Indie Flower', cursive;
+}
