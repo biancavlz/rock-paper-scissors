@@ -8,24 +8,35 @@
 </head>
 <body>
     <div class="container">
-      <h1></h1>
+      <h1>Welcome!</h1>
       <div class="game-container">
         <div class="hand">
           <h3>Payer1</h3>
-          <img class="hand-image" src="./assets/left1.png">
-          <p>Choose your rival</p>
+          <img class="hand-image hand-left" src="./assets/left1.png">
+
+          <div>
+            <p>Choose an opponent hand</p>
+            <ul class="opponents-images">
+              <button><img src="./assets/opponents/edgar-allan-poe.png" alt="edgar">Edgar</button>
+              <button><img src="./assets/opponents/einstein.png" alt="Albert">Albert</button>
+              <button><img src="./assets/opponents/frida-kahlo.png" alt="Frida">Frida</button>
+              <button><img src="./assets/opponents/socrates.png" alt="Socrates">Socrates</button>
+              <button><img src="./assets/opponents/stephen-king.png" alt="Stephen">Stephen</button>
+            </ul>
+          </div>
+
         </div>
         <div>
           <h3>VS</h3>
         </div>
         <div class="hand">
-          <h3>Player2</h3>
-          <img class="hand-image" src="./assets/right1.png">
+          <h3>You</h3>
+          <img class="hand-image hand-right" src="./assets/right1.png">
           <div>
             <p>Choose your hand</p>
-            <button class="button-left button-paper"><i class="far fa-hand-paper"></i></button>
-            <button class="button-left button-scissors"><i class="far fa-hand-scissors"></i></button>
-            <button class="button-left button-rock"><i class="far fa-hand-rock"></i></button>
+            <button class="button-right button-paper"><i class="far fa-hand-paper"></i></button>
+            <button class="button-right button-scissors"><i class="far fa-hand-scissors"></i></button>
+            <button class="button-right button-rock"><i class="far fa-hand-rock"></i></button>
           </div>
         </div>
       </div>
