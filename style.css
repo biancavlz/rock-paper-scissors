@@ -8,10 +8,27 @@ h1 {
   font-family: 'Lobster', cursive;
   font-size: 8rem;
   color: #4ECCA3;
+  text-align: center;
 }
 
 h3 {
+  text-align: center;
   font-size: 3rem;
   color: #4ECCA3;
   font-family: 'Indie Flower', cursive;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hand-image {
+  width: 60%;
+  height: auto;
+}
+
+.far {
+  font-size: 60px;
 }
