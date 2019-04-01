@@ -8,28 +8,32 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body class="container">
+  <div class="intro" >
+    <h3 class="header-intro">Rock, paper, scissors</h3>
+  </div>
   <h1 class="header">Welcome!</h1>
-
-  <section class="container">
+  
+  <section class="container versus">
     <div class="row">
-      <div class="col">
+      <div class="col versus-column">
         <h3 class="player-one player">Player 1</h3>
         <img class="hand-image hand-left" src="./assets/left1.png">
       </div>
-      <div class="col">
-        <h3 class="versus">VS</h3>
+      <div class="col versus-column">
+        <h3 class="vs text-center">VS</h3>
+        
       </div>
-      <div class="col">
+      <div class="col versus-column">
         <h3 class="player">You</h3>
         <img class="hand-image hand-right" src="./assets/right1.png">
       </div>
     </div>
   </section>
 
-  <section>
+  <section class="container">
     <div class="row">
-      <div class="col">
-        <p><span>Step 1 </span>Choose an opponent hand</p>
+      <div class="col opponents text-center">
+        <p><span class="badge badge-secondary step">Step 1</span>Choose an opponent hand</p>
         <div class="container">
           <div class="row">
             <button class="opponent btn btn-light"><img src="./assets/opponents/batman.png" alt="Batman">Batman</button>
@@ -54,8 +58,8 @@
         </div>
       </div>
     
-      <div class="col">
-        <p><span>Step 2 </span>Choose your hand</p>
+      <div class="col hands text-center">
+        <p><span class="badge badge-secondary step">Step 2</span>Choose your hand</p>
         <button class="button-right btn btn-light"><i class="far fa-hand-paper"></i>Paper</button>
         <button class="button-right btn btn-light"><i class="far fa-hand-scissors"></i>Scissors</button>
         <button class="button-right btn btn-light"><i class="far fa-hand-rock"></i>Rock</button>
