@@ -23,6 +23,11 @@ h3 {
   height: auto;
 }
 
+.btn-light {
+  width: 20%;
+  margin: 5px;
+}
+
 .far {
   font-size: 60px;
 }
