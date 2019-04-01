@@ -4,16 +4,22 @@
     padding: 0;
 }
 
-h1 {
+.header {
   font-family: 'Lobster', cursive;
   font-size: 8rem;
   color: #4ECCA3;
   text-align: center;
 }
 
-h3 {
+.player {
   text-align: center;
   font-size: 3rem;
+  color: #4ECCA3;
+  font-family: 'Indie Flower', cursive;
+}
+
+.versus {
+  font-size: 4rem;
   color: #4ECCA3;
   font-family: 'Indie Flower', cursive;
 }
