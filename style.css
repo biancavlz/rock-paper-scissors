@@ -4,6 +4,24 @@
     padding: 0;
 }
 
+/* general */
+.btn-light {
+  width: 20%;
+  margin: 5px;
+}
+
+span.badge-secondary {
+  color: #fff;
+  background-color: #f3514f;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.title {
+  font-size: 1.2rem;
+}
+
+/* intro */
 .intro {
   background-color: #124662;
   color: white;
@@ -58,21 +76,10 @@ button.btn.opponent {
   padding: 0px 0px;
 }
 
-.btn-light {
-  width: 20%;
-  margin: 5px;
-}
-
-span.badge-secondary {
-  color: #fff;
-  background-color: #f3514f;
-  font-size: 20px;
-  margin-right: 10px;
-}
-
 /* hands section */
-.far {
+.fas {
   font-size: 60px;
+  color: #FFB74D;
 }
 
 .hands {
