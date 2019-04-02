@@ -113,4 +113,40 @@ button.btn.opponent {
   padding: 15px;
   border: 4px solid #f8f9fa;
   border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* for devices smaller then 1200 */
+@media(max-width: 1200px) {
+  .header-intro {
+    font-size: 1.7rem;
+  }
+
+  img {
+    height: 60px;
+  }
+
+  .player {
+    font-size: 1.7rem;
+  }
+
+  .vs > h3 {
+    font-size: 3rem;
+  }
+
+  .header {
+    font-size: 5rem;
+  }
+
+  .opponents {
+    margin-bottom: 15px;
+  }
+
+  .versus {
+    margin-bottom: 15px;
+  }
+
+  .fas {
+    font-size: 2.5rem;
+  }
 }
