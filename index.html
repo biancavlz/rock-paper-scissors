@@ -10,7 +10,7 @@
 </head>
 <body>
   <div class="intro">
-    <div class="container">
+    <div class="container col col-md-12">
       <h3 class="header-intro">Rock, paper, scissors</h3>
       <img class="intro-image" src="./assets/rock-scissors-paper.png">
     </div>
@@ -20,14 +20,14 @@
     <h1 class="header container">Welcome!</h1>
     <section class="container versus">
     <div class="row">
-      <div class="col versus-column">
-        <h3 class="player-one player">Player 1</h3>
+      <div class="col-4 versus-column">
+        <h3 class="player-one player">Opponent</h3>
         <img class="hand-image hand-left" src="./assets/left1.png">
       </div>
-      <div class="col versus-column vs">
+      <div class="col-4 versus-column vs">
         <h3>VS</h3>
       </div>
-      <div class="col versus-column">
+      <div class="col-4 versus-column">
         <h3 class="player">You</h3>
         <img class="hand-image hand-right" src="./assets/right1.png">
       </div>
@@ -36,24 +36,24 @@
 
   <section class="container">
     <div class="row">
-      <div class="col opponents text-center">
+      <div class="col-md-6 col-12 opponents text-center">
         <p class="title"><span class="badge badge-secondary step">Step 1</span>Choose an opponent hand</p>
         <div class="container">
-          <div class="row">
+          <div class="row d-flex flex-row justify-content-around">
             <button class="opponent btn btn-light"><img src="./assets/opponents/batman.png" alt="Batman">Batman</button>
             <button class="opponent btn btn-light"><img src="./assets/opponents/einstein.png" alt="Albert">Einstein</button>
             <button class="opponent btn btn-light"><img src="./assets/opponents/frida-kahlo.png" alt="Frida">Frida Kahlo</button>
             <button class="opponent btn btn-light"><img src="./assets/opponents/vendetta.png" alt="Vendetta">Vendetta</button>
           </div>
 
-          <div class="row">
+          <div class="row d-flex flex-row justify-content-around">
             <button class="opponent btn btn-light"><img src="./assets/opponents/darth-vader.png" alt="Darth Vader">Darth Vader</button>
             <button class="opponent btn btn-light"><img src="./assets/opponents/neo.png" alt="Neo">Neo</button>
             <button class="opponent btn btn-light"><img src="./assets/opponents/pennywise.png" alt="Pennywise">Pennywise</button>
             <button class="opponent btn btn-light"><img src="./assets/opponents/catwoman.png" alt="Catwoman">Catwoman</button>
           </div>
 
-          <div class="row">
+          <div class="row d-flex flex-row justify-content-around">
             <button class="opponent btn btn-light"><img src="./assets/opponents/superman.png" alt="Superman">Superman</button>
             <button class="opponent btn btn-light"><img src="./assets/opponents/trinity.png" alt="Trinity">Trinity</button>
             <button class="opponent btn btn-light"><img src="./assets/opponents/wonder-woman.png" alt="Wonder Woman">Wonder Woman</button>
@@ -61,8 +61,8 @@
           </div>
         </div>
       </div>
-    
-      <div class="col hands text-center">
+
+      <div class="col-md-6 col-12 hands text-center">
         <p class="title"><span class="badge badge-secondary step">Step 2</span>Choose your hand</p>
         <button class="button-right btn btn-light"><i class="fas fa-hand-paper"></i>Paper</button>
         <button class="button-right btn btn-light"><i class="fas fa-hand-scissors"></i>Scissors</button>
