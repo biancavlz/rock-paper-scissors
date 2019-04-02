@@ -10,6 +10,10 @@
   margin: 5px;
 }
 
+/*font-family: 'Baloo Chettan', cursive;
+font-family: 'Carter One', cursive;
+font-family: 'Bree Serif', serif;*/
+
 span.badge-secondary {
   color: #fff;
   background-color: #f3514f;
@@ -23,10 +27,20 @@ span.badge-secondary {
 
 /* intro */
 .intro {
-  background-color: #124662;
+  background-color: #124661;
+  height: 20vh;
+}
+
+.intro .container {
+  font-family: 'Bree Serif', serif;
   color: white;
-  align-items: center;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.intro-image{
+  height: 20vh;
 }
 
 .header {
@@ -51,13 +65,13 @@ span.badge-secondary {
   text-align: center;
   font-size: 3rem;
   color: #1A999C;
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Bree Serif', serif;
 }
 
 .vs {
   font-size: 4rem;
-  color: #1A999C;
-  font-family: 'Indie Flower', cursive;
+  color: #f3514f;
+  font-family: 'Bree Serif', serif;
 }
 
 .hand-image {

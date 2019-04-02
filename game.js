@@ -41,10 +41,10 @@ rightHandsArray.forEach(function(button, i) {
 
     setTimeout(function() {
       const rightHandNum = i + 1
-      document.getElementsByTagName("img")[1].setAttribute("src", "./assets/right" + rightHandNum + ".png");
+      document.getElementsByTagName("img")[2].setAttribute("src", "./assets/right" + rightHandNum + ".png");
 
       const leftHandNum = getRandomNumber();
-      document.getElementsByTagName("img")[0].setAttribute("src", "./assets/left" + leftHandNum + ".png"); 
+      document.getElementsByTagName("img")[1].setAttribute("src", "./assets/left" + leftHandNum + ".png"); 
 
       result(leftHandNum, rightHandNum, );
     }, 2000);
