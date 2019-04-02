@@ -12,7 +12,9 @@
 
 /*font-family: 'Baloo Chettan', cursive;
 font-family: 'Carter One', cursive;
-font-family: 'Bree Serif', serif;*/
+font-family: 'Bree Serif', serif;
+font-family: 'Lobster', cursive;*/
+
 
 span.badge-secondary {
   color: #fff;
@@ -31,9 +33,14 @@ span.badge-secondary {
   height: 20vh;
 }
 
-.intro .container {
-  font-family: 'Bree Serif', serif;
+.header-intro {
+  font-family: 'Carter One', cursive;
+  font-size: 2.5rem;
   color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.intro .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,7 +51,7 @@ span.badge-secondary {
 }
 
 .header {
-  font-family: 'Lobster', cursive;
+  font-family: 'Bree Serif', serif;
   font-size: 8rem;
   color: #1A999C;
   text-align: center;
