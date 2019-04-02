@@ -13,6 +13,8 @@ function result(leftHand, rightHand){
     return headerSelector.innerHTML = name + " wins";
   }else if (leftHand === 2 && rightHand === 1){
     return headerSelector.innerHTML = name + " wins";
+  }else if (leftHand === 1 && rightHand === 3){
+    return headerSelector.innerHTML = name + " wins";
   }else if (leftHand === 2 && rightHand === 3){
     return headerSelector.innerHTML = "You win";
   }else if (leftHand < rightHand) {
