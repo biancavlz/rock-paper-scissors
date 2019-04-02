@@ -76,9 +76,15 @@ span.badge-secondary {
 }
 
 .vs {
-  font-size: 4rem;
   color: #f3514f;
   font-family: 'Bree Serif', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vs > h3 {
+  font-size: 4.5rem;
 }
 
 .hand-image {
