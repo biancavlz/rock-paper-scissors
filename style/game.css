@@ -119,6 +119,26 @@ button.btn.opponent {
   border-radius: 10px;
 }
 
+/* score section */
+.score-section {
+  margin-top: 30px;
+}
+
+.score-header {
+  font-size: 2.2rem;
+  font-family: 'Bree Serif', serif;
+  color: #226583;
+}
+
+thead {
+  background-color: #F76362;
+  color: white;
+}
+
+tr {
+  font-size: 20px;
+}
+
 /* for devices smaller then 1200 */
 @media(max-width: 1200px) {
   .header-intro {
