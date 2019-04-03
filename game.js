@@ -3,9 +3,9 @@ function getRandomNumber(){
   return number;
 }
 
-function score(opponentName, value){
+function score(opponentName, valueLeft, valueRight){
   setsOpponentName(opponentName)
-  setsValues(value)
+  setsValues(valueLeft, valueRight)
 }
 
 function setsOpponentName(opponentName){
@@ -13,7 +13,7 @@ function setsOpponentName(opponentName){
   return headerTableSelector.innerHTML = opponentName;
 }
 
-function setsValues(valueLeft = 0, valueRight = 0){
+function setsValues(valueLeft, valueRight){
   const newRow     = document.querySelector(".body-table").insertRow();
   const leftCell   = newRow.insertCell(0);
   const middleCell = newRow.insertCell(1);
@@ -24,43 +24,44 @@ function setsValues(valueLeft = 0, valueRight = 0){
   cellRight.innerHTML  = valueRight;
 }
 
-
+const valueLeft = 0
+const valueRight = 0
 
 function result(leftHand, rightHand){
   const headerSelector = document.querySelector("h1")
   const name = document.querySelector(".player-one").textContent
 
-  const valueLeft = 0
-  const valueRight = 0
+  
 
   let insert = headerSelector.innerHTML
 
   if (leftHand === 3 && rightHand === 1){
     score(name, valueLeft, insert = "1");
-    return insert = "You win";
+    return headerSelector.innerHTML = "You win";
 
   }else if (leftHand === 3 && rightHand === 2){
     score(name, insert = "1", valueRight);
-    return insert = name + " wins";
+    return headerSelector.innerHTML = name + " wins";
 
   }else if (leftHand === 2 && rightHand === 1){
     score(name, insert = "1", valueRight);
-    return insert = name + " wins";
+    return headerSelector.innerHTML = name + " wins";
 
   }else if (leftHand === 1 && rightHand === 3){
     score(name, insert = "1", valueRight);
-    return insert = name + " wins";
+    return headerSelector.innerHTML = name + " wins";
 
   }else if (leftHand === 2 && rightHand === 3){
     score(name, valueLeft, insert = "1");
-    return insert = "You win";
+    return headerSelector.innerHTML = "You win";
 
   }else if (leftHand < rightHand) {
     score(name, valueLeft,  insert = "1");
-    return insert = "You win";
+    return headerSelector.innerHTML = "You win";
   } else {
-    return insert = "Draw!";
-    score(name);
+    score(name, insert = "0", insert = "0");
+    return headerSelector.innerHTML = "Draw!";
+    
   }
 }
 
