@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #f76262;
+}
+
+/* welcome section */
+.welcome { 
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0px;
+}
+
+/*welcome-header */
+.welcome-header {
+  font-family: 'Carter One', cursive;
+  font-size: 5rem;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+/* image */
+.welcome-image {
+  width: 80%;
+}
+
+/* start-button */
+.start-button {
+  width: 20%;
+  font-family: 'Bree Serif', serif;
+}
+
+.start-button > a {
+  color: black;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.start-button:hover > a {
+  color: black;
+  text-decoration: none;
+}
+
+/* for devices smaller between 576px then 992px */
+@media(min-width: 576px) and (max-width: 992px) {
+  .welcome-header {
+    font-size: 3rem;
+  }
+}
+
+/* for devices smaller than 576px */
+@media(max-width: 576px) {
+  .welcome-header {
+    font-size: 2rem;
+  }
+
+  .welcome-image {
+    width: 70%;
+  }
+
+  .start-button > a {
+    font-size: 20px;
+  }
+}
