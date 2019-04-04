@@ -15,11 +15,10 @@ font-family: 'Carter One', cursive;
 font-family: 'Bree Serif', serif;
 font-family: 'Lobster', cursive;*/
 
-
 span.badge-secondary {
   color: #fff;
   background-color: #f76262;
-  font-size: 20px;
+  font-size: 25px;
   margin-right: 10px;
 }
 
@@ -117,6 +116,31 @@ button.btn.opponent {
   padding: 15px;
   border: 4px solid #f8f9fa;
   border-radius: 10px;
+}
+
+/* score section */
+.score-section {
+  margin-top: 30px;
+}
+
+.score-header {
+  font-size: 2.2rem;
+  font-family: 'Bree Serif', serif;
+  color: #226583;
+}
+
+thead {
+  background-color: #F76362;
+  color: white;
+}
+
+tr {
+  font-size: 20px;
+}
+
+td {
+  font-size: 2rem;
+  font-family: 'Bree Serif', serif;
 }
 
 /* for devices smaller then 1200 */
