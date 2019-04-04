@@ -4,44 +4,40 @@ function getRandomNumber(){
 }
 
 function score(opponentName, valueLeft, valueRight){
-  resetsScore()
-  setsOpponentName(opponentName)
-  setsValues(valueLeft, valueRight)
+  resetsScore();
+  tableHeaderName(opponentName);
+  addTableRows(valueLeft, valueRight);
 }
 
-function setsOpponentName(opponentName){
+function tableHeaderName(opponentName){
   const headerTableSelector            = document.querySelector("th.th-opponent")
   return headerTableSelector.innerHTML = opponentName;
 }
 
 function resetsScore(){
-  let currentName = document.querySelector("th.th-opponent").innerText
-  let newName     = document.querySelector('.player-one').innerHTML
+  let currentOpponentName = document.querySelector("th.th-opponent").innerText;
+  let newOpponentName     = document.querySelector('.player-one').innerHTML;
   
-  if (currentName !== newName ){
-    $(".body-table").empty()
+  if (currentOpponentName !== newOpponentName){
+    $(".body-table").empty();
   }
 }
 
-function setsValues(valueLeft, valueRight){
+function addTableRows(valueLeft, valueRight){
   const newRow     = document.querySelector(".body-table").insertRow();
-  const leftCell   = newRow.insertCell(0);
-  const middleCell = newRow.insertCell(1);
-  const cellRight  = newRow.insertCell(2);
-
-  leftCell.innerHTML   = valueLeft;
-  middleCell.innerHTML = ":"
-  cellRight.innerHTML  = valueRight;
+  const leftCell   = newRow.insertCell(0).innerHTML = valueLeft;
+  const middleCell = newRow.insertCell(1).innerHTML = ":";
+  const cellRight  = newRow.insertCell(2).innerHTML = valueRight;
 }
 
-const valueLeft  = 0
-const valueRight = 0
+const valueLeft  = 0;
+const valueRight = 0;
 
 function result(leftHand, rightHand){
-  const headerSelector = document.querySelector("h1")
-  const opponentName   = document.querySelector(".player-one").textContent
+  const headerSelector = document.querySelector("h1");
+  const opponentName   = document.querySelector(".player-one").textContent;
 
-  let insert = headerSelector.innerHTML
+  let insert = headerSelector.innerHTML;
 
   if (leftHand === 3 && rightHand === 1){
     score(opponentName, valueLeft, insert = "1");
@@ -63,7 +59,8 @@ function result(leftHand, rightHand){
   }
 }
 
-const opponentsArray = document.querySelectorAll('.opponent')
+// Gets the text of the button
+const opponentsArray = document.querySelectorAll('.opponent');
 
 opponentsArray.forEach(function(button, i) {
   button.addEventListener("click", function() {
@@ -72,8 +69,8 @@ opponentsArray.forEach(function(button, i) {
   });
 });
 
-function getOpponentImages(i) {
-  const rightHandNum = i + 1
+function getHandsImages(i) {
+  const rightHandNum = i + 1;
   document.getElementsByTagName("img")[2].setAttribute("src", "./assets/right" + rightHandNum + ".png");
 
   const leftHandNum = getRandomNumber();
@@ -83,15 +80,14 @@ function getOpponentImages(i) {
 }
 
 //main function
-const rightHandsArray = document.querySelectorAll('.button-right')
+const rightHandsArray = document.querySelectorAll('.button-right');
 
 function getHands(array) {
   array.forEach(function(button, i) {
     button.addEventListener("click", function() {
-      setTimeout(getOpponentImages(i), 1500);
+      setTimeout(getHandsImages(i), 1500)
     });
   });
 }
 
 getHands(rightHandsArray)
-
