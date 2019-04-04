@@ -15,11 +15,10 @@ font-family: 'Carter One', cursive;
 font-family: 'Bree Serif', serif;
 font-family: 'Lobster', cursive;*/
 
-
 span.badge-secondary {
   color: #fff;
   background-color: #f76262;
-  font-size: 20px;
+  font-size: 25px;
   margin-right: 10px;
 }
 
@@ -137,6 +136,11 @@ thead {
 
 tr {
   font-size: 20px;
+}
+
+td {
+  font-size: 2rem;
+  font-family: 'Bree Serif', serif;
 }
 
 /* for devices smaller then 1200 */
