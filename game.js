@@ -48,29 +48,19 @@ function result(leftHand, rightHand){
     score(opponentName, valueLeft, insert = "1");
     return headerSelector.innerHTML = "You win";
 
-  }else if (leftHand === 3 && rightHand === 2){
+  }else if ((leftHand === 3 && rightHand === 2) 
+    || (leftHand === 2 && rightHand === 1) 
+    ||(leftHand === 1 && rightHand === 3)){
     score(opponentName, insert = "1", valueRight);
     return headerSelector.innerHTML = opponentName + " wins";
 
-  }else if (leftHand === 2 && rightHand === 1){
-    score(opponentName, insert = "1", valueRight);
-    return headerSelector.innerHTML = opponentName + " wins";
-
-  }else if (leftHand === 1 && rightHand === 3){
-    score(opponentName, insert = "1", valueRight);
-    return headerSelector.innerHTML = opponentName + " wins";
-
-  }else if (leftHand === 2 && rightHand === 3){
+  }else if ((leftHand === 2 && rightHand === 3) || (leftHand < rightHand)){
     score(opponentName, valueLeft, insert = "1");
     return headerSelector.innerHTML = "You win";
 
-  }else if (leftHand < rightHand) {
-    score(opponentName, valueLeft,  insert = "1");
-    return headerSelector.innerHTML = "You win";
-  } else {
+  }else {
     score(opponentName, insert = "0", insert = "0");
     return headerSelector.innerHTML = "Draw!";
-    
   }
 }
 
@@ -82,8 +72,6 @@ opponentsArray.forEach(function(button, i) {
     let newName = document.querySelector('.player-one').innerHTML = name
   });
 });
-
-
 
 function getOpponentImages(i) {
   const rightHandNum = i + 1
