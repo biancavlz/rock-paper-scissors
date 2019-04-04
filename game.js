@@ -4,13 +4,23 @@ function getRandomNumber(){
 }
 
 function score(opponentName, valueLeft, valueRight){
+  resetsScore()
   setsOpponentName(opponentName)
   setsValues(valueLeft, valueRight)
 }
 
 function setsOpponentName(opponentName){
-  const headerTableSelector = document.querySelector("th.th-opponent")
+  const headerTableSelector            = document.querySelector("th.th-opponent")
   return headerTableSelector.innerHTML = opponentName;
+}
+
+function resetsScore(){
+  let currentName = document.querySelector("th.th-opponent").innerText
+  let newName     = document.querySelector('.player-one').innerHTML
+  
+  if (currentName !== newName ){
+    $(".body-table").empty()
+  }
 }
 
 function setsValues(valueLeft, valueRight){
@@ -24,23 +34,12 @@ function setsValues(valueLeft, valueRight){
   cellRight.innerHTML  = valueRight;
 }
 
-// function resetScore(){
-//   const opponentsArray = document.querySelectorAll('.opponent')
-
-//   return opponentsArray.forEach(function(button, i) {
-//     button.addEventListener("click", function() {
-//       let name    = document.getElementsByTagName("button")[i].textContent
-//       console.log(name)
-//     });
-//   });
-// }
-
 const valueLeft  = 0
 const valueRight = 0
 
 function result(leftHand, rightHand){
   const headerSelector = document.querySelector("h1")
-  const opponentName = document.querySelector(".player-one").textContent
+  const opponentName   = document.querySelector(".player-one").textContent
 
   let insert = headerSelector.innerHTML
 
@@ -51,8 +50,8 @@ function result(leftHand, rightHand){
   }else if ((leftHand === 3 && rightHand === 2) 
     || (leftHand === 2 && rightHand === 1) 
     ||(leftHand === 1 && rightHand === 3)){
-    score(opponentName, insert = "1", valueRight);
-    return headerSelector.innerHTML = opponentName + " wins";
+      score(opponentName, insert = "1", valueRight);
+      return headerSelector.innerHTML = opponentName + " wins";
 
   }else if ((leftHand === 2 && rightHand === 3) || (leftHand < rightHand)){
     score(opponentName, valueLeft, insert = "1");
@@ -89,7 +88,6 @@ const rightHandsArray = document.querySelectorAll('.button-right')
 function getHands(array) {
   array.forEach(function(button, i) {
     button.addEventListener("click", function() {
-
       setTimeout(getOpponentImages(i), 1500);
     });
   });
