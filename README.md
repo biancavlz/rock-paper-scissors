@@ -1,4 +1,4 @@
-# Rock, Paper, Scissors
+# Rock, Paper Scissors
 
 ## Description
 It's a game for one player. You will be playing against your favourite opponent from a list. 
