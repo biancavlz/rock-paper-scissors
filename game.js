@@ -1,7 +1,5 @@
-function getRandomNumber(){
-  const number = Math.floor(Math.random() * 3) + 1;
-  return number;
-}
+const valueLeft  = 0;
+const valueRight = 0;
 
 function score(opponentName, valueLeft, valueRight){
   resetsScore();
@@ -29,9 +27,6 @@ function addTableRows(valueLeft, valueRight){
   const middleCell = newRow.insertCell(1).innerHTML = ":";
   const cellRight  = newRow.insertCell(2).innerHTML = valueRight;
 }
-
-const valueLeft  = 0;
-const valueRight = 0;
 
 function result(leftHand, rightHand){
   const headerSelector = document.querySelector("h1");
@@ -69,6 +64,11 @@ opponentsArray.forEach(function(button, i) {
   });
 });
 
+function getRandomNumber(){
+  const number = Math.floor(Math.random() * 3) + 1;
+  return number;
+}
+
 function getHandsImages(i) {
   const rightHandNum = i + 1;
   document.getElementsByTagName("img")[2].setAttribute("src", "./assets/right" + rightHandNum + ".png");
@@ -76,7 +76,7 @@ function getHandsImages(i) {
   const leftHandNum = getRandomNumber();
   document.getElementsByTagName("img")[1].setAttribute("src", "./assets/left" + leftHandNum + ".png"); 
 
-  result(leftHandNum, rightHandNum);
+  result(leftHandNum, rightHandNum)
 }
 
 //main function
@@ -85,7 +85,7 @@ const rightHandsArray = document.querySelectorAll('.button-right');
 function getHands(array) {
   array.forEach(function(button, i) {
     button.addEventListener("click", function() {
-      setTimeout(getHandsImages(i), 1500)
+      setTimeout(function(){ getHandsImages(i); }, 1300)
     });
   });
 }
